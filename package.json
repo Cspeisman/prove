@@ -1,0 +1,26 @@
+{
+  "name": "prove",
+  "version": "1.0.0",
+  "description": "Prove @requires/@ensures contracts on TypeScript functions with Z3",
+  "type": "module",
+  "bin": {
+    "prove": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^7.0.2",
+    "z3-solver": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3"
+  }
+}
